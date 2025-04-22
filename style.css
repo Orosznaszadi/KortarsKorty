@@ -24,4 +24,39 @@ body {
     color: white;
     text-decoration: none;
   }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    text-align: left;
+  }
+  
+  thead {
+    background-color: #eee;
+  }
+  
+  .timeline {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 2em;
+  }
+  
+  .timeline li {
+    margin-bottom: 1em;
+    padding-left: 1em;
+    border-left: 3px solid #333;
+    position: relative;
+  }
+  
+  .timeline li::before {
+    content: "•";
+    color: #333;
+    position: absolute;
+    left: -0.7em;
+  }
   
