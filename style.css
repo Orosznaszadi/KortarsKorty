@@ -59,4 +59,49 @@ body {
     position: absolute;
     left: -0.7em;
   }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2em;
+    font-size: 0.95rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  thead th {
+    background-color: #fafafa;
+    color: #333;
+    font-weight: 600;
+    padding: 0.75em;
+    text-align: center;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  
+  tbody td {
+    padding: 0.7em;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #fcfcfc;
+  }
+  
+  tbody td:first-child {
+    text-align: left;
+    font-weight: 500;
+    color: #444;
+    background-color: #f7f7f7;
+  }
+  
+  thead th:first-child {
+    background-color: #f7f7f7;
+  }
+  
+  @media (max-width: 768px) {
+    table {
+      font-size: 0.85rem;
+    }
+  }
   
